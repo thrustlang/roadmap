@@ -1,7 +1,5 @@
-<p align="center">
-  <img src= "https://github.com/thrushlang/thrushc/blob/master/assets/thrushlang-v1.6.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
-</p>
-
+<img src= "https://github.com/thrushlang/.github/blob/main/assets/logos/thrushlang-logo.png" alt= "logo" style= "width: 80%; height: 80%;"> </img>
+  
 # Thrush Programming Language | Roadmap
 
 This repository serves as an explanation of the major development stages the compiler will face in the future. It covers aspects of conventional programming, including new features from Thrush, as well as quantum programming and its potential use in future compiler and language development.
