@@ -1,6 +1,6 @@
-<img src= "https://github.com/thrushlang/.github/blob/main/assets/logos/thrushlang-logo.png" alt= "logo" style= "width: 80%; height: 80%;"> </img>
+<img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo.png" alt= "logo" style= "width: 80%; height: 80%;"> </img>
   
-# Thrush Programming Language | Roadmap
+# Thrust Programming Language | Roadmap
 
 This repository serves as an explanation of the major development stages the compiler will face in the future. It covers aspects of conventional programming, including new features from Thrush, as well as quantum programming and its potential use in future compiler and language development.
 
@@ -9,7 +9,6 @@ This repository serves as an explanation of the major development stages the com
 
 ------------------
 
-``conventional/`` It covers the future of compiler and language development in mainstream programming and the aspects Thrush will highlight.
-
-``quantum/`` It covers the future of compiler and language development in quantum programming, in the aspects that Thrush will feature.
+- ``conventional/`` It covers the future of compiler and language development in mainstream programming and the aspects Thrush will highlight.
+- ``quantum/`` It covers the future of compiler and language development in quantum programming, in the aspects that Thrush will feature.
 
