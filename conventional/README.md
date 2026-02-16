@@ -1,17 +1,17 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/thrushc/blob/master/assets/thrushlang-v1.6.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo-name.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
-# Thrush Programming Language | Roadmap > Conventional Programming
+# Thrust Programming Language | Roadmap > Conventional Programming
 
-This article will explain the biggest and most game-changing developments in mainstream programming that Thrush has to offer the world.
+This article will explain the biggest and most game-changing developments in mainstream programming that Thrust has to offer the world.
 
 > [!WARNING]  
 > These enormous development stages in the development of the language and compiler do not influence its early deployment to BETA.
 
-## When will Thrush come out?
+## When will Thrust come out?
 
-Thrush will be released when the compiler and language are deemed to have the minimum C capability to interoperate with core code. In addition, all the capabilities needed to interoperate with external code have been mapped, making Thrush an extensible and usable language with real code from other programming languages.
+Thrush will be released when the compiler and language are deemed to have the minimum C capability to interoperate with core code. In addition, all the capabilities needed to interoperate with external code have been mapped, making Thrust an extensible and usable language with real code from other programming languages.
 
 It should be noted that this does not include certain new features in C, such as macros and compile-time execution.
 
@@ -21,13 +21,13 @@ If you want to accelerate development, it is recommended to support the develope
 
 For example, offering to develop language and syntax documentation, without getting involved in the compiler.
 
-In any case, Thrush is soon to be released.
+In any case, Thrust is soon to be released.
 
 ------------------
 
 ### Cbindgen
 
-A new feature in Thrush, this will allow the compiler to export C production code to native Thrush code, allowing for full C integration into Thrush.
+A new feature in Thrush, this will allow the compiler to export C production code to native Thrush code, allowing for full C integration into Thrust.
 
 For more information, see: `cbindgen/README.md`
 
@@ -39,7 +39,7 @@ For more information, see: `compiletime/README.md`
 
 ### C Code Execution
 
-A new feature from Thrush, which will allow you to compile C directly from the Thrush compiler. It is heavily inspired by the implementation of the [D Programming Language](https://dlang.org).
+A new feature from Thrust, which will allow you to compile C directly from the Thrust compiler. It is heavily inspired by the implementation of the [D Programming Language](https://dlang.org).
 
 For more information, see: `cexecution/README.md`
 
@@ -57,39 +57,10 @@ Reference: https://bootstrappable.org
 
 ### Cbindgen
 
-This will allow Thrush to interoperate with production C code using just one import. This system preprocesses C type headers to integrate them into the Thrush compiler's front-end AST.
+This will allow Thrust to interoperate with production C code using just one import. This system preprocesses C type headers to integrate them into the Thrust compiler's front-end AST.
 
 An example of its use can be seen as follows:
 
 ```rust
-import "raylib.h";
+importC "raylib.h";
 ```
-
-### Compile Time Code Executation
-
-It's an alternative compilation mode to Thrush's default AOT, without discontinuing its use. Compile-time execution can be performed in many programming languages. However, it is always limited to certain code scenarios. The code must always be static, not dynamic, so its capabilities are limited. This is the case in languages ​​like C++, Rust, and Zig.
-
-Thrush will break these limits with a JIT implementation similar to dynamic languages ​​or those that use a JIT. This includes the ability to execute dynamic memory and external system operations.
-
-An example of use is:
-
-```rust
-fn freee(any: ptr) void @public @extern("free");
-fn malloc(size: u32) ptr @public @extern("malloc") @compiletime;
-
-fn dynamic_code_allocation() ptr @compiletime {
-    return malloc(sizeof(ptr));
-}
-
-fn main() u32 {
-
-    local pointer: ptr = dynamic_code_allocation();
-
-    free(pointer);
-
-    return 0;
-
-}
-```
-
-The JIT has the ability to replace all uses of the function with its value obtained in dynamic execution within the JIT, giving a constant value.
