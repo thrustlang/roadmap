@@ -1,12 +1,12 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/thrushc/blob/master/assets/thrushlang-v1.6.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo-name.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
-# Thrush Programming Language 
+# Thrust Programming Language 
 
 ## Roadmap > Conventional Programming > Cbindgen > Preprocessor
 
-As an introduction to C-type header preprocessing, Thrush. You need to know a few details.
+As an introduction to C-type header preprocessing, Thrust. You need to know a few details.
 
 ### Details / Issues
 
@@ -20,7 +20,7 @@ As an introduction to C-type header preprocessing, Thrush. You need to know a fe
 
 To have full support for preprocessing .h headers at compile time, you need to know that the easiest tool to integrate with the current LLVM backend is to use the Clang frontend for C.
 
-The choice of clang to preprocess C header files is due to its robustness and ease of integration into the current Thrush compiler.
+The choice of clang to preprocess C header files is due to its robustness and ease of integration into the current Thrust compiler.
 
 ### Clang Library
 
@@ -30,7 +30,7 @@ This library exposes the entire current Clang frontend to the world, allowing yo
 
 ### Resolution for C type headers
 
-The solution is to fully integrate the Clang frontend into Thrush. This is entirely possible.
+The solution is to fully integrate the Clang frontend into Thrust. This is entirely possible.
 
 Once finished, the compiler will go through the following steps to process the AST of the C-type headers.
 
@@ -44,11 +44,11 @@ C-type header resolution will be handled by the Clang frontend.
 
 #### Compiler Organization
 
-At this stage the Thrush compiler will sort and integrate the source C-type stack into the current compilation unit.
+At this stage the Thrust compiler will sort and integrate the source C-type stack into the current compilation unit.
 
 #### Code Generation
 
-At this stage the Thrush compiler takes the organized AST in place and begins mapping it to Thrush intermediate types for the selected Thrush code generator.
+At this stage the Thrust compiler takes the organized AST in place and begins mapping it to Thrust intermediate types for the selected Thrust code generator.
 
 
 

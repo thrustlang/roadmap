@@ -1,8 +1,8 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/thrushc/blob/master/assets/thrushlang-v1.6.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo-name.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
-# Thrush Programming Language 
+# Thrust Programming Language 
 
 ## Roadmap > Conventional Programming > Compiler Bootstrapping
 
@@ -14,7 +14,7 @@ For more information on bootstrapping compilers: https://bootstrappable.org
 
 ### It's a huge work
 
-In fact, yes. It's a huge undertaking—I dare say it's more extensive than any other Thrush update—since it involves porting all the Thrush compiler code from Rust to Thrush. Which makes it a stupidly crazy undertaking.
+In fact, yes. It's a huge undertaking—I dare say it's more extensive than any other Thrust update—since it involves porting all the Thrust compiler code from Rust to Thrust. Which makes it a stupidly crazy undertaking.
 
 To a certain extent, it's hoped that there will already be a community willing to fully contribute to the project. Otherwise, it won't happen until the right one is created.
 
