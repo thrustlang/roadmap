@@ -1,12 +1,12 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/thrushc/blob/master/assets/thrushlang-v1.6.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo-name.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
-# Thrush Programming Language 
+# Thrust Programming Language 
 
 ## Roadmap > Conventional Programming > Compile Time Code Execution > Just In Time Compiler
 
-This article will briefly explain how the just-in-time compiler can be integrated into the current Thrush compiler, allowing Thrush to execute code at compile time.
+This article will briefly explain how the just-in-time compiler can be integrated into the current Thrust compiler, allowing Thrust to execute code at compile time.
 
 ### First things first.
 
@@ -25,7 +25,7 @@ pub unsafe extern "C" fn LLVMCreateJITCompilerForModule(
 
 ### JIT Compiler Design
 
-First of all, the just-in-time compiler that will be integrated into the current Thrush compiler has high compile-time priority, which is executed before the final AOT execution by the same final compilation mode.
+First of all, the just-in-time compiler that will be integrated into the current Thrust compiler has high compile-time priority, which is executed before the final AOT execution by the same final compilation mode.
 
 The C header type generator is processed before the compile-time execution of the JIT.
 
@@ -35,7 +35,7 @@ JIT compilation will have an AOT phase that will begin compiling the entire repr
 
 ### JIT Dynamic Symbol Table
 
-One of Thrush's capabilities is dynamic code execution, which can generate system modifications, such as memory allocations and conventional processes in AOT mode. This puts it ahead of languages ​​like C++ and Rust, which have limited compile-time execution.
+One of Thrust capabilities is dynamic code execution, which can generate system modifications, such as memory allocations and conventional processes in AOT mode. This puts it ahead of languages ​​like C++ and Rust, which have limited compile-time execution.
 
 For this, a symbol table must be accessed dynamically that contains the **binary** and body of the functions needed to carry out a dynamic execution process in the JIT.
 
