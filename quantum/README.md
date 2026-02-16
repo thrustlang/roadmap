@@ -1,8 +1,8 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/thrushc/blob/master/assets/thrushlang-v1.6.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo-name.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
-# Thrush Programming Language | Roadmap > Quantum Programming
+# Thrust Programming Language | Roadmap > Quantum Programming
 
 This article will briefly discuss the integration of quantum programming into Thrush and its ways to break into the spotlight in this cutting-edge technology sector.
 
